@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickBus</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url("https://okcredit-blog-images-prod.storage.googleapis.com/2021/01/bus1.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
+  
+      header {
+            height: 20px;
+    text-align: left;
+    ;
+    background-color: rgba(4, 34, 67, 0.9);
+    color: white;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+      }
+
+      header a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+      }
+
+      footer {
+          text-align: center;
+    padding: 0px;
+    background-color: rgba(4, 34, 67, 0.9);
+    color: white;
+    position: fixed;
+    height: 38px;
+    width: 100%;
+    bottom: 0;
+      }
+
+ div {
+            padding-top: 70px; /* Adjust for fixed header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            color: #042243;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    
+
+      main {
+        padding-top: 70px; /* Adjusted for reduced header height */
+        padding-bottom: 40px; /* Adjusted for reduced footer height */
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+ 
+      <nav>
+       <a href="#home">Home</a>
+        <a href="booking.html">Bookings</a>
+       
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+ <div>
+   <form >
+            <h2>Enter Details</h2>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+
+            <label for="date">Journey Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" placeholder="Enter number of seats" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="" disabled selected>Select class</option>
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First Class">First Class</option>
+            </select>
+
+            <input type="submit" value="Book Now">
+        </form>
+   
+ </div>
+   
+   
+
+    
+  </body>
+</html>
