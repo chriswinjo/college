@@ -1,0 +1,24 @@
+<html>
+<body>
+    <script>
+function sum(){
+        var n = window.prompt("Enter size of the array");
+        var arr = new Array();
+        var sum = 0;
+        for (let i = 1; i <= n; i++) {
+            arr[i] = parseInt(window.prompt("Enter element " + i));
+           
+        }
+        document.writeln("Array elements are:");
+        for(let i=1; i<arr.length; i++)
+        {
+           document.writeln(arr[i]);
+            sum = sum + arr[i];
+           
+        }
+        alert("Sum =" + sum);
+}
+sum();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<body>
+    <script>
+       
+       
+        let n = parseInt(window.prompt("Enter the number of students:"));
+        let students = [];
+        let grades = [];
+
+       
+        for (let i = 0; i < n; i++) {
+            let name = window.prompt("Enter the name of student " + (i + 1) + ":");
+            let grade = parseFloat(window.prompt("Enter the grade for " + name + ":"));
+           
+            students.push(name);
+            grades.push(grade);
+        }
+
+       
+     
+
+       
+        document.writeln("<h2>Grades of Students</h2>");
+        for (let i = 0; i < n; i++) {
+            document.writeln(students[i] + ": " + grades[i] + "<br>");
+        }
+       
+        let sum = 0;
+            for(let i=0;i<grades.length;i++)
+            {
+             sum=sum+grades[i];
+            }
+            let r= sum / grades.length;
+        document.writeln("Average Grade: " + r);  
+             
+
+    </script>
+</body>
+</html>
+
